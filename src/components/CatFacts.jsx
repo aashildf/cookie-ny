@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import catGif from "../assets/sourcat.gif";
+
 
 function CatFacts() {
   const [facts, setFacts] = useState([]);
@@ -39,11 +41,9 @@ function CatFacts() {
     <div className="cat-facts-container">
       <div className="cat-header">
         <h2>Cat Facts</h2>
-        <img
-          src="./public/sourcat.gif"
-          alt="Cat Animation"
-          className="cat-animation"
-        />
+        <img src={catGif}
+         alt="Cat Animation" 
+         className="cat-animation" />
       </div>
 
       <button
